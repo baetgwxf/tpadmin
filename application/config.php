@@ -226,4 +226,17 @@ return [
         'var_page'  => 'p',
         'list_rows' => 20,
     ],
+    'captcha'  => [
+        'codeSet'  => '1236547890', // 验证码字符集合
+        'expire'   => 1800,// 验证码过期时间（s）
+        'fontSize' => 16,// 验证码字体大小(px)
+        'useCurve' => false,// 是否画混淆曲线
+        'imageH'   => 0,// 验证码图片高度
+        'imageW'   => 0,// 验证码图片宽度
+        'length'   => 4,// 验证码位数
+        'useNoise' => true,// 是否添加杂点
+        'reset'    => true,// 验证成功后是否重置
+        'bg'       => [255, 250, 255],
+        'fontttf'  => '4.ttf',
+    ],
 ];
