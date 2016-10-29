@@ -312,3 +312,16 @@ function get_conf($name, $conf, $key = true)
         }
     }
 }
+
+
+/**
+ * 打印调试信息到前台
+ * @param $log
+ * @return mixed
+ */
+if (!function_exists('dump_log')) {
+    function dump_log($log){
+        \Conlose::config(config('socketlog'));
+        return \Conlose::log($log);//自定义日志的样式，第三个参数为css样式;
+    }
+}

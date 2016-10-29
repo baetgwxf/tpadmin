@@ -65,6 +65,7 @@ class Index extends Controller
      */
     public function welcome()
     {
+        dump_log(session(''));
         // 查询 ip 地址和登录地点
         if (Session::get('last_login_time')) {
             $last_login_ip = Session::get('last_login_ip');
